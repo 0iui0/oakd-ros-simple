@@ -25,11 +25,11 @@ int main(int argc, char **argv)
   auto color = cv::Scalar(255, 0, 255);
 
   // IR laser, LED illuminator of PRO version
-  bool if_IR_laser_emission = device.setIrLaserDotProjectorBrightness(oak_handler.IR_laser_brightness_mA);
-  bool if_IR_flood_emission = device.setIrFloodLightBrightness(oak_handler.LED_illuminator_brightness_mA);
+//  bool if_IR_laser_emission = device.setIrLaserDotProjectorBrightness(oak_handler.IR_laser_brightness_mA);
+//  bool if_IR_flood_emission = device.setIrFloodLightBrightness(oak_handler.LED_illuminator_brightness_mA);
 
   cout << "Usb speed: " << device.getUsbSpeed() << endl;
-  cout << "Laser: " << if_IR_laser_emission << " , Flood: " << if_IR_flood_emission << endl;
+ // cout << "Laser: " << if_IR_laser_emission << " , Flood: " << if_IR_flood_emission << endl;
 
   ///// obtained data
   cv::Mat FrameLeft, FrameRight, FrameDepth, FrameDepthColor, FrameRgb, FrameDetect;
